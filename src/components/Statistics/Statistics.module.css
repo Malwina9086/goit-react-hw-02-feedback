@@ -1,0 +1,20 @@
+.title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.noFeedback {
+  font-size: 18px;
+  color: #757575;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
