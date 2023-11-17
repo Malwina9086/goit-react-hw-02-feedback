@@ -38,7 +38,10 @@ export class App extends Component {
             options={this.options}
             onLeaveFeedback={this.handleLeaveFeedback}
           />
-          {isFeedbackGiven && (
+        </Section>
+
+        <Section title="Statistics">
+          {isFeedbackGiven ? (
             <Statistics
               good={good}
               neutral={neutral}
@@ -46,12 +49,8 @@ export class App extends Component {
               total={total}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
-          )}
-          {!isFeedbackGiven && (
-            <>
-              <h2>Statistics</h2>
-              <Notification message="No feedback given" />
-            </>
+          ) : (
+            <Notification message="No feedback given" />
           )}
         </Section>
       </div>
